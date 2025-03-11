@@ -1,6 +1,25 @@
 # 🚀 MongoHive - The Ultimate MongoDB Guide 🗄️⚡  
 
+![MongoDB](https://img.shields.io/badge/MongoDB-6.0-green?logo=mongodb)
+![Node.js](https://img.shields.io/badge/Node.js-14%2B-brightgreen?logo=node.js)
+![License](https://img.shields.io/badge/License-MIT-blue.svg)
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange)
+
 MongoHive is a structured MongoDB repository designed for **scalable, efficient, and high-performance** database management. It provides a **comprehensive** guide for setting up MongoDB, executing queries, following best practices, and integrating MongoDB with backend frameworks.  
+
+---
+
+## 📖 Table of Contents  
+- [Features](#-features)  
+- [Getting Started](#-getting-started)  
+- [Database Configuration](#-database-configuration)  
+- [Query Execution](#-query-execution)  
+- [Best Practices](#-best-practices)  
+- [Backend Integrations](#-backend-integrations)  
+- [Tools & Resources](#-tools--resources)  
+- [Contribution](#-contribution)  
+- [License](#-license)  
+
 ---
 
 ## 📌 Features  
@@ -22,7 +41,6 @@ MongoHive is a structured MongoDB repository designed for **scalable, efficient,
 - 📦 **NPM/Yarn**  
 
 #### 🔧 Install MongoDB Locally:  
-
 ```sh
 # On Ubuntu:
 sudo apt update
@@ -37,7 +55,6 @@ sudo systemctl start mongod
 ```
 
 #### 📥 Clone the Repository & Install Dependencies:  
-
 ```sh
 git clone https://github.com/Hifza-Khalid/MongoHive.git
 cd MongoHive
@@ -49,7 +66,6 @@ npm install  # or yarn install
 ## 🎯 Database Configuration  
 
 Modify the `.env` file with the following details:  
-
 ```env
 MONGO_URI=mongodb://localhost:27017/mongohive_db
 DB_NAME=mongohive_db
@@ -105,7 +121,6 @@ db.users.deleteOne({ name: "Alice" });
 ## 🔗 Backend Integrations  
 
 ### 🔥 Connecting MongoDB with Node.js  
-
 ```js
 const mongoose = require("mongoose");
 
@@ -118,7 +133,6 @@ mongoose.connect(process.env.MONGO_URI, {
 ```
 
 ### 🏗️ Using MongoDB with NestJS  
-
 ```ts
 @Module({
   imports: [MongooseModule.forRoot(process.env.MONGO_URI)],
@@ -141,6 +155,7 @@ export class AppModule {}
 
 💡 We welcome contributions! Feel free to **fork**, open **issues**, and submit **pull requests**.  
 
+### 📌 Steps to Contribute  
 ```sh
 # Fork the repository
 git clone https://github.com/your-username/MongoHive.git
@@ -148,12 +163,16 @@ git clone https://github.com/your-username/MongoHive.git
 # Create a new branch
 git checkout -b feature-branch
 
-# Commit and push
+# Make your changes and commit
 git commit -m "Added a new feature"
+
+# Push your changes
 git push origin feature-branch
 
 # Open a pull request on GitHub 🚀
 ```
+
+For detailed guidelines, check the **[CONTRIBUTING.md](CONTRIBUTING.md)** file.  
 
 ---
 
